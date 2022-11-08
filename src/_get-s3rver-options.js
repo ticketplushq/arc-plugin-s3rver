@@ -2,6 +2,8 @@ module.exports = (s3rver) => {
   let customBucketNames = []
   let options = {
     port: 4568,
+    accessKeyId: 'S3RVER',
+    secretAccessKey: 'S3RVER',
     address: 'localhost',
     directory: './buckets',
     allowMismatchedSignatures: true,
