@@ -22,8 +22,12 @@ module.exports = {
         bucketNames = bucketNames.concat(customBucketNames)
       }
 
+      const configureBuckets = bucketNames.map((bucketName) => {
+        return { name: bucketName }
+      })
+
       update.start('Starting up S3rver...')
-      s3rverInstance = new S3rver({ configureBuckets: bucketNames, ...options })
+      s3rverInstance = new S3rver({ configureBuckets, ...options })
       await s3rverInstance.run()
       update.done('S3rver started')
     },
