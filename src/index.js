@@ -12,8 +12,8 @@ module.exports = {
       let bucketNames = [];
 
       [ 'public', 'private' ].forEach((privacy) => {
-        if (arc[`${privacy}-storage`]) {
-          bucketNames = bucketNames.concat(arc[`${privacy}-storage`])
+        if (arc[`storage-${privacy}`]) {
+          bucketNames = bucketNames.concat(arc[`storage-${privacy}`])
         }
       })
 
@@ -50,9 +50,9 @@ module.exports = {
 
       let storageEnvs = {};
       [ 'public', 'private' ].forEach((privacy) => {
-        if (arc[`${privacy}-storage`]) {
-          bucketNames = bucketNames.concat(arc[`${privacy}-storage`])
-          arc[`${privacy}-storage`].forEach((bucket) => {
+        if (arc[`storage-${privacy}`]) {
+          bucketNames = bucketNames.concat(arc[`storage-${privacy}`])
+          arc[`storage-${privacy}`].forEach((bucket) => {
             storageEnvs[
               `ARC_STORAGE_${privacy.toUpperCase()}_${bucket.replace(/-/g, '_').toUpperCase()}`
             ] = bucket
