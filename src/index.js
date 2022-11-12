@@ -74,7 +74,7 @@ module.exports = {
 
       return {
         testing: {
-          ARC_S3RVER_CONFIG: JSON.stringify(s3rverConfig),
+          ARC_S3RVER_CONFIG: s3rverConfig,
           ...storageEnvs
         }
       }
