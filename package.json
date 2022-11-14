@@ -1,6 +1,6 @@
 {
   "name": "@ticketplushq/arc-plugin-s3rver",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Architect plugin for enable S3 on sandbox using s3rver",
   "main": "src/index.js",
   "scripts": {

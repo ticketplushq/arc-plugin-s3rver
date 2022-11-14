@@ -1,3 +1,12 @@
+## [1.0.3](https://github.com/ticketplushq/arc-plugin-s3rver/compare/v1.0.2...v1.0.3) (2022-11-14)
+
+
+### Bug Fixes
+
+* remove unnecessary stringify ([1c1fa42](https://github.com/ticketplushq/arc-plugin-s3rver/commit/1c1fa421d78268b0dcc89e948530201c1aac52de))
+
+
+
 ## [1.0.2](https://github.com/ticketplushq/arc-plugin-s3rver/compare/v1.0.1...v1.0.2) (2022-11-10)
 
 
