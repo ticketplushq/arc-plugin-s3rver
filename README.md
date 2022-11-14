@@ -1,5 +1,7 @@
 # @ticketplushq/arc-plugin-s3rver
 
+[![Build](https://github.com/ticketplushq/arc-plugin-s3rver/actions/workflows/build.yaml/badge.svg)](https://github.com/ticketplushq/arc-plugin-s3rver/actions/workflows/build.yaml)
+
 This plugin runs an s3 server (thanks to [s3rver](https://www.npmjs.com/package/s3rver)) in the architect sandbox. With it you can develop and run tests that depend on S3.
 
 ## Table of contents
