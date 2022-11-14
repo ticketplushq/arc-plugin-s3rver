@@ -63,6 +63,7 @@ In addition to that, we also have a handy `ARC_S3RVER_CONFIG` env var, which has
 my-app
 
 @plugins
+architect/plugin-storage-public
 ticketplushq/arc-plugin-s3rver
 
 @storage-public
